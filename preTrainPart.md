@@ -3,7 +3,10 @@
 **EDA**
 
 ***SweetViz***
+
 https://github.com/fbdesignpro/sweetviz
 
 ***Pair Plot***
+
 https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
+
