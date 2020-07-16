@@ -10,3 +10,7 @@ https://github.com/fbdesignpro/sweetviz
 
 https://towardsdatascience.com/visualizing-data-with-pair-plots-in-python-f228cf529166
 
+
+***Pandas Profiling***
+
+https://github.com/pandas-profiling/pandas-profiling
