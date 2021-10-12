@@ -20,7 +20,7 @@ sudo systemctl restart docker
 docker pull tensorflow/tensorflow:latest-gpu-jupyter
 ```
 
-### Start docker with Jupyter access, GPU enabled & mount the host directory and change the container's working directory 
+### Start docker with Jupyter access, GPU enabled & mount the host directory and change the container's working directory (via -w)
 ```bash
 docker run -it -p 8888:8888 -v $PWD:/tf/KGL -w /mnt/projects/KGL/TweetSentimentExtraction --gpus all tensorflow/tensorflow:latest-gpu-jupyter
 ```
