@@ -20,6 +20,25 @@ sudo systemctl restart docker
 docker pull tensorflow/tensorflow:latest-gpu-jupyter
 ```
 
+### Build custom Dockerfile (AIO)
+```bash
+FROM tensorflow/tensorflow:latest-gpu-jupyter
+
+RUN pip3 -q install pip --upgrade
+# Install all basic packages
+RUN pip3 install \
+    # Jupyter itself
+    jupyter \
+    # Numpy and Pandas are required a-priori
+    numpy pandas \
+    # PyTorch with CUDA 10.2 support and Torchvision
+    torch torchvision \
+    # Hugging Face Transformers
+    transformers \
+    # Var...
+    barbar sklearn livelossplot keras_sequential_ascii
+```
+
 ### Start docker with Jupyter access, GPU enabled & mount the host directory and change the container's working directory (via -w)
 ```bash
 docker run -it -p 8888:8888 -v $PWD:/tf/KGL -w /mnt/projects/KGL/TweetSentimentExtraction --gpus all tensorflow/tensorflow:latest-gpu-jupyter
