@@ -10,6 +10,31 @@ sudo apt-get install git-all
 sudo apt install python3-pip unzip python3-virtualenv python3-psutil xvfb -y
 ```
 
+# Python Multiple versions
+
+```bash
+sudo apt-get install software-properties-common
+
+# adding python repository 
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+
+# install python 3.10
+sudo apt install python3.10
+```
+
+Creating virtual environments with different versions of python
+
+```bash
+
+#if venv package for that version is not installed already
+sudo apt install python9.6-venv
+python9.6 -m venv p96_env
+source p96_env/bin/activate
+python --version
+
+```
+
 
 # Python virtual ENV
 
