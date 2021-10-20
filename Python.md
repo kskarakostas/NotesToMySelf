@@ -1,11 +1,13 @@
 # Python Reqs
 
 # Table of Contents
-1. [Packages](#Packages)
-2. [Python Multiple versions](#PythonMultiVersions)
+1. Packages
+2. Python Multiple versions
+3. Python virtual ENV
+4. Generic Tricks
+  1. Get all ipython history
 
 
-<div id='Packages'/>
 **Packages**
 ```bash
 sudo apt-get install software-properties-common
@@ -15,7 +17,6 @@ sudo apt-get install git-all
 
 sudo apt install python3-pip unzip python3-virtualenv python3-psutil xvfb -y
 ```
-<div id='PythonMultiVersions'/>
 # Python Multiple versions
 
 ```bash
@@ -78,4 +79,12 @@ deactivate
 ```bash
 alias p3_test='source $HOME/.p3_test/bin/activate'
 
+```
+# Generic Tricks
+
+## Ipython history
+
+From within ipython save the history to filename.txt
+```bash
+%history -g -f filename.txt
 ```
