@@ -49,25 +49,3 @@ RUN pip3 install \
 ```bash
 docker run -it -p 8888:8888 -v $PWD:/tf/KGL -w /mnt/projects/KGL/TweetSentimentExtraction --gpus all tensorflow/tensorflow:latest-gpu-jupyter
 ```
-
-# Python Snippets
-
-### Generic requirements
-```python
-!/usr/bin/python3 -m pip install --upgrade pip
-!pip install -U pandas sklearn transformers nltk
-
-import nltk
-nltk.download('stopwords')
-nltk.download('wordnet')
-```
-
-### Suppress TF2 warnings
-
-```python
-import logging, os
-
-logging.disable(logging.WARNING)
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
-```
-
