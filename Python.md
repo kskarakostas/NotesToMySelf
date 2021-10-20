@@ -2,9 +2,10 @@
 
 # Table of Contents
 1. [Packages](#Packages)
-2. [Python Multiple versions](#Python Multiple versions)
+2. [Python Multiple versions](#PythonMultiVersions)
 
 
+<div id='Packages'/>
 **Packages**
 ```bash
 sudo apt-get install software-properties-common
@@ -14,7 +15,7 @@ sudo apt-get install git-all
 
 sudo apt install python3-pip unzip python3-virtualenv python3-psutil xvfb -y
 ```
-
+<div id='PythonMultiVersions'/>
 # Python Multiple versions
 
 ```bash
