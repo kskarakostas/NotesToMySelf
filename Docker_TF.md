@@ -63,9 +63,9 @@ RUN pip install \
     # PyTorch with CUDA 10.2 support and Torchvision
     torch torchvision \
     # Hugging Face Transformers
-    transformers \
+    transformers datasets \
     # Var...
-    barbar sklearn livelossplot keras_sequential_ascii
+    barbar sklearn livelossplot keras_sequential_ascii wandb
 
 #RUN nohup jupyter-lab --no-browser --allow-root --port=8888 --ip=0.0.0.0 &
 ENTRYPOINT ["jupyter-lab", "--ip=0.0.0.0", "--allow-root", "--port=8888", "--no-browser"]
