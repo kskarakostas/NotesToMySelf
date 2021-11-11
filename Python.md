@@ -5,8 +5,8 @@
 2. Python Multiple versions
 3. Python virtual ENV
 4. Generic Tricks
-  1. Get all ipython history
-  2. Reload module
+ 4.1. Get all ipython history
+ 4.2. Reload module
 
 
 **Packages**
