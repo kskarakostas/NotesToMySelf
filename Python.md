@@ -6,6 +6,7 @@
 3. Python virtual ENV
 4. Generic Tricks
   1. Get all ipython history
+  2. Reload module
 
 
 **Packages**
@@ -87,4 +88,12 @@ alias p3_test='source $HOME/.p3_test/bin/activate'
 From within ipython save the history to filename.txt
 ```bash
 %history -g -f filename.txt
+```
+
+## Ipython reload module
+
+From within ipython save the history to filename.txt
+```python
+%load_ext autoreload
+%autoreload 2
 ```
