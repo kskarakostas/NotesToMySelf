@@ -1,12 +1,12 @@
 # Python Reqs
 
 # Table of Contents
-1. Packages
-2. Python Multiple versions
-3. Python virtual ENV
-4. Generic Tricks
- 4.1. Get all ipython history
- 4.2. Reload module
+ 1. Packages
+ 2. Python Multiple versions
+ 3. Python virtual ENV
+ 4. Generic Tricks
+  4.1. Get all ipython history
+  4.2. Reload module
 
 
 **Packages**
