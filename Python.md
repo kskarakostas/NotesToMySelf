@@ -37,10 +37,10 @@ Creating virtual environments with different versions of python
 
 #if venv package for that version is not installed already
 sudo apt install python9.6-venv
-python9.6 -m venv p96_env
-source p96_env/bin/activate
+python9.6 -m venv .p96_env
+source .p96_env/bin/activate
 python --version
-
+echo 'alias p96_test="source $HOME/.p96_env/bin/activate"' >> $HOME/.bashrc
 ```
 
 
