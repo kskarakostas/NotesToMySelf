@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+import sys, os
+ 
+# total arguments
+n = len(sys.argv)
+if n!=3:
+	print("Please run providing python version and virtual env name")
+	print("example: penv 3.10 p310")
+	exit()
+
+python_version = sys.argv[1]
+venv_name = sys.argv[2]
+#venv_desc = sys.argv[3]
+if os.path.exists(f"{os.path.expanduser('~')}/.{venv_name}"):
+	print(f"{os.path.expanduser('~')}/.{venv_name} exists!\nYou must use a different name")
+	exit()
+
+cmd = f"""
+sudo apt install -y python{python_version}-venv
+python{python_version} -m venv $HOME/.{venv_name}
+source $HOME/.{venv_name}/bin/activate
+echo 'alias {venv_name}="source $HOME/.{venv_name}/bin/activate"' >> $HOME/.bashrc
+"""
+
+cmd = cmd.strip()
+
+print("=================\n")
+
+print(cmd)
+
+print("\n=================")
